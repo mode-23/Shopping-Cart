@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="images/shop.png" sizes="196 x 196">
+    <script src="JS/script.js" defer></script>
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="part-1 part">
+            <a href="#" class="logo"><span>H</span>p</a>
+            <ul class="main">
+                <li class="active">all</li>
+                <li>clothes</li>
+                <li>computers</li>
+                <li>phones</li>
+            </ul>
+            </div>
+            <div class="part-2 part">
+                <div class="search">
+                <input type="search" id="search" placeholder="Got something in mind?">
+                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+            <i class="fa-solid fa-magnifying-glass" id="searchExtra"></i>
+            </div>
+            <div class="cart">
+                <span class="numberOfProducts">0</span>
+                <i class="fa-solid fa-bag-shopping" id="cart"></i>
+                <h5></h5>
+            </div>
+            <div class="cart" id="fav">
+                <h3 class="price-out">Empty</h3>
+            </div>
+            <!-- <i class="fa-solid fa-heart"></i> -->
+            </div>
+            <div class="toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="inner-cart">
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+            <h3 class="total-all">Total: <span class="total-price">$0</span><button class="purchase"> Purchase</button></h3>
+            <div class="cart-box-holder">
+                <!-- <div class="cart-box">
+                    <div class="cart-img">
+                        <img src="images/artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg" >
+                    </div>
+                    <h4 class="title-cart">Nike 1</h4>
+                    <p class="price-cart">$6.80</p>
+                    <input type="number" class="count-cart" value="1">
+                    <span class="remove-cart"><i class="fa-solid fa-trash btnDelete"></i></span>
+                </div>
+                <div class="cart-box">
+                    <div class="cart-img">
+                        <img src="images/artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg" >
+                    </div>
+                    <h4 class="title-cart">Nike 1</h4>
+                    <p class="price-cart">$2.20</p>
+                    <input type="number" class="count-cart" value="1">
+                    <span class="remove-cart"><i class="fa-solid fa-trash btnDelete"></i></span>
+                </div>
+                <div class="cart-box">
+                    <div class="cart-img">
+                        <img src="images/artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg" >
+                    </div>
+                    <h4 class="title-cart">Nike 1</h4>
+                    <p class="price-cart">$4.50</p>
+                    <input type="number" class="count-cart" value="1">
+                    <span class="remove-cart"><i class="fa-solid fa-trash btnDelete"></i></span>
+                </div> -->
+            </div>
+        </div>
+    </header>
+    <section class="landing">
+        <div class="container">
+            <i class="fa-solid fa-angle-left" id="prev"></i>
+            <i class="fa-solid fa-angle-right" id="next"></i>
+            <div class="img-holder">
+                <img src="images/revolt-164_6wVEHfI-unsplash.jpg" alt="" class="img">
+                <img src="images/artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg" alt="">
+                <img src="images/maksim-larin-1vy2QcZd5FU-unsplash.jpg" alt="">
+                <img src="images/usama-akram-kP6knT7tjn4-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="home">
+        <div class="container">
+        <div class="home-holder">
+            <div class="one boxContent"><img src="images/lap3.jpg" alt=""></div>
+            <div class="two boxContent"><img src="images/ryan-plomp-76w_eDO1u1E-unsplash.jpg" alt=""></div>
+            <div class="three boxContent"><img src="images/oscar-nord-8l9VxXI28tY-unsplash.jpg" alt=""></div>
+        </div>
+        </div>
+    </section>
+    <section class="products">
+        <div class="filter container">
+            <i class="fa-brands fa-microsoft active" id="comFilter"></i>
+            <i class="fa-solid fa-list" id="listFilter"></i>
+        </div>
+        <div class="container">
+            <h1 class="categoryTitle"><i class="fa-solid fa-fire"></i>HOT PRODUCTS <span class="new">new</span></h1>
+            <div class="box-holder">
+                <div class="box cartShop newPro">
+                <img src="images/artem-bondarchuk-XPBYi4K8vFI-unsplash.jpg" class="shopImg">
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <h4 class="title">Sneaker Smoke'ish</h4>
+                <p class="price">37.20</p>
+                <div class="overlay">
+                    <a class="btn addtoCart"> 🛒 </a>
+                    <a class="fav">Add to Cart</a>
+                </div>
+                <span class="new-div">new</span>
+                </div>
+                <div class="box cartShop newPro">
+                    <img src="images/revolt-164_6wVEHfI-unsplash.jpg" class="shopImg">
+                    <p class="description">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="title">Sneaker Hellcat</h4>
+                    <p class="price">51.99</p>
+                    <div class="overlay">
+                        <a class="btn addtoCart"> 🛒</a>
+                        <a class="fav">Add to Cart</a>
+                    </div>
+                    <span class="new-div">new</span>
+                    </div>
+                    <div class="box cartShop">
+                        <img src="images/maksim-larin-1vy2QcZd5FU-unsplash.jpg" class="shopImg">
+                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                        <h4 class="title">Brownise Adidas</h4>
+                        <p class="price">22.00</p>
+                        <div class="overlay">
+                            <a class="btn addtoCart"> 🛒</a>
+                            <a class="fav">Add to Cart</a>
+                        </div>
+                        <span class="new-div">new</span>
+                        </div>
+                        <div class="box cartShop">
+                            <img src="images/usama-akram-kP6knT7tjn4-unsplash.jpg" class="shopImg">
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <h4 class="title">Nike'Arash</h4>
+                            <p class="price">30.99</p>
+                            <div class="overlay">
+                                <a class="btn addtoCart"> 🛒</a>
+                                <a class="fav">Add to Cart</a>
+                            </div>
+                            <span class="new-div">new</span>
+                            </div>
+                            <div class="box cartShop newPro">
+                                <img src="images/lap1.jpg" class="shopImg">
+                                <p class="description">Lorem ipsum dolor sit amet.</p>
+                                <h4 class="title">RedDragon</h4>
+                                <p class="price">3299.50</p>
+                                <div class="overlay">
+                                    <a class="btn addtoCart"> 🛒</a>
+                                    <a class="fav">Add to Cart</a>
+                                </div>
+                                <span class="new-div">new</span>
+                                </div>
+                                <div class="box cartShop">
+                                    <img src="images/lap2.jpg" class="shopImg">
+                                    <p class="description">Lorem ipsum dolor sit amet.</p>
+                                    <h4 class="title">Omen Labo</h4>
+                                    <p class="price">2500.99</p>
+                                    <div class="overlay">
+                                        <a class="btn addtoCart"> 🛒</a>
+                                        <a class="fav">Add to Cart</a>
+                                    </div>
+                                    <span class="new-div">new</span>
+                                    </div>
+                                    <div class="box cartShop">
+                                        <img src="images/lap3.jpg" class="shopImg">
+                                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                                        <h4 class="title">Belli coup</h4>
+                                        <p class="price">4250.20</p>
+                                        <div class="overlay">
+                                            <a class="btn addtoCart"> 🛒</a>
+                                            <a class="fav">Add to Cart</a>
+                                        </div>
+                                        <span class="new-div">new</span>
+                                        </div>
+                                        <div class="box cartShop newPro">
+                                            <img src="images/lap4.jpg" class="shopImg">
+                                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                                            <h4 class="title">Integrate Vgod</h4>
+                                            <p class="price">1700.00</p>
+                                            <div class="overlay">
+                                                <a class="btn addtoCart"> 🛒</a>
+                                                <a class="fav">Add to Cart</a>
+                                            </div>
+                                            <span class="new-div">new</span>
+                                            </div>
+            </div>
+            <h1 class="categoryTitle"><i class="fa-solid fa-shirt"></i> Clothes <span class="discount">discount</span></h1>
+            <div class="box-holder">
+                <div class="box cartShop">
+                <img src="images/faith-yarn-Wr0TpKqf26s-unsplash.jpg" class="shopImg">
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <h4 class="title">T-shirt blackDevil</h4>
+                <p class="price">115.50</p>
+                <div class="overlay">
+                    <a class="btn addtoCart"> 🛒</a>
+                    <a class="fav">Add to Cart</a>
+                </div>
+                </div>
+                <div class="box cartShop">
+                    <img src="images/matas-katinas-7ITfJfAxxY4-unsplash.jpg" class="shopImg">
+                    <p class="description">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="title">Hoodie Brown'd</h4>
+                    <p class="price">219.99</p>
+                    <div class="overlay">
+                        <a class="btn addtoCart"> 🛒</a>
+                        <a class="fav">Add to Cart</a>
+                    </div>
+                    </div>
+                    <div class="box cartShop">
+                        <img src="images/ryan-hoffman-6Nub980bI3I-unsplash.jpg" class="shopImg">
+                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                        <h4 class="title">Simple Black T'</h4>
+                        <p class="price">24.99</p>
+                        <div class="overlay">
+                            <a class="btn addtoCart"> 🛒</a>
+                            <a class="fav">Add to Cart</a>
+                        </div>
+                        </div>
+                        <div class="box cartShop">
+                            <img src="images/santhosh-kumar-RqYTuWkTdEs-unsplash.jpg" class="shopImg">
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <h4 class="title">Summer Crem</h4>
+                            <p class="price">9.99</p>
+                            <div class="overlay">
+                                <a class="btn addtoCart"> 🛒</a>
+                                <a class="fav">Add to Cart</a>
+                            </div>
+                            </div>
+            </div>
+            <h1 class="categoryTitle"><i class="fa-solid fa-mobile-screen"></i> Phones</h1>
+            <div class="box-holder">
+                <div class="box cartShop">
+                <img src="images/kenny-eliason-z3kBG5xIhjo-unsplash.jpg" class="shopImg">
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <h4 class="title">Huwawei 3310</h4>
+                <p class="price">519.99</p>
+                <div class="overlay">
+                    <a class="btn addtoCart"> 🛒</a>
+                    <a class="fav">Add to Cart</a>
+                </div>
+                </div>
+                <div class="box cartShop">
+                    <img src="images/brando-makes-branding-Kr2Myi0WUws-unsplash.jpg" class="shopImg">
+                    <p class="description">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="title">Iphone 2019 pro</h4>
+                    <p class="price">649.99</p>
+                    <div class="overlay">
+                        <a class="btn addtoCart"> 🛒</a>
+                        <a class="fav">Add to Cart</a>
+                    </div>
+                    </div>
+                    <div class="box cartShop">
+                        <img src="images/oscar-nord-8l9VxXI28tY-unsplash.jpg" class="shopImg">
+                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                        <h4 class="title">Redmi 9</h4>
+                        <p class="price">779.99</p>
+                        <div class="overlay">
+                            <a class="btn addtoCart"> 🛒</a>
+                            <a class="fav">Add to Cart</a>
+                        </div>
+                        </div>
+                        <div class="box cartShop">
+                            <img src="images/rahul-chakraborty-xsGxhtAsfSA-unsplash.jpg" class="shopImg">
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <h4 class="title">Nokia TI</h4>
+                            <p class="price">218.50</p>
+                            <div class="overlay">
+                                <a class="btn addtoCart"> 🛒</a>
+                                <a class="fav">Add to Cart</a>
+                            </div>
+                            </div>
+            </div>
+            <h1 class="categoryTitle"><i class="fa-solid fa-computer"></i> Computers</h1>
+            <div class="box-holder">
+                <div class="box cartShop">
+                <img src="images/lap1.jpg" class="shopImg">
+                <p class="description">Lorem ipsum dolor sit amet.</p>
+                <h4 class="title">Opera Gravity</h4>
+                <p class="price">4999.99</p>
+                <div class="overlay">
+                    <a class="btn addtoCart"> 🛒</a>
+                    <a class="fav">Add to Cart</a>
+                </div>
+                </div>
+                <div class="box cartShop">
+                    <img src="images/lap2.jpg" class="shopImg">
+                    <p class="description">Lorem ipsum dolor sit amet.</p>
+                    <h4 class="title">FireFox pro-max</h4>
+                    <p class="price">3499.99</p>
+                    <div class="overlay">
+                        <a class="btn addtoCart"> 🛒</a>
+                        <a class="fav">Add to Cart</a>
+                    </div>
+                    </div>
+                    <div class="box cartShop">
+                        <img src="images/lap3.jpg" class="shopImg">
+                        <p class="description">Lorem ipsum dolor sit amet.</p>
+                        <h4 class="title">Chrome area51</h4>
+                        <p class="price">3199.99</p>
+                        <div class="overlay">
+                            <a class="btn addtoCart"> 🛒</a>
+                            <a class="fav">Add to Cart</a>
+                        </div>
+                        </div>
+                        <div class="box cartShop">
+                            <img src="images/lap4.jpg" class="shopImg">
+                            <p class="description">Lorem ipsum dolor sit amet.</p>
+                            <h4 class="title">GX Tforce</h4>
+                            <p class="price">9999.99</p>
+                            <div class="overlay">
+                                <a class="btn addtoCart"> 🛒</a>
+                                <a class="fav">Add to Cart</a>
+                            </div>
+                            </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
